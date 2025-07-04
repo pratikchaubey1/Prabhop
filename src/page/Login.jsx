@@ -2,7 +2,7 @@ import React from 'react';
 
 function Login() {
   return (
-    <div className="flex flex-col lg:flex-row w-full min-h-screen bg-white/10">
+    <div className=" mt-19 flex flex-col lg:flex-row w-full min-h-screen bg-white/10">
      
       <div className="w-full lg:w-1/2 flex items-center justify-center px-6 py-10">
         <div className="w-full max-w-md p-8 bg-white rounded-2xl shadow-2xl">

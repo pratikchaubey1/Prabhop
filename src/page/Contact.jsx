@@ -10,6 +10,8 @@ function Contact() {
   };
 
   return (
+    <div className='mt-20'>
+
     <div className="max-w-md w-full mx-auto p-8 bg-white/2 rounded-2xl shadow-xl mt-10 shadow-gray-300">
       <h2 className="text-3xl text-center text-indigo-600 font-bold mb-6">Contact Us</h2>
 
@@ -42,7 +44,7 @@ function Contact() {
             {...register("email", { 
               required: "Email is required",
               pattern: {
-               
+                
                 message: "Invalid email address"
               }
             })}
@@ -56,7 +58,7 @@ function Contact() {
           <label
             className="block text-gray-700 text-sm font-semibold mb-2"
             htmlFor="message"
-          >
+            >
             Message
           </label>
           <textarea
@@ -75,6 +77,7 @@ function Contact() {
         </button>
       </form>
     </div>
+            </div>
   );
 }
 

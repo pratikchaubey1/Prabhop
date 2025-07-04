@@ -16,7 +16,7 @@ function Cart({ cart, remove, setcart }) {
   };
 
   return (
-    <div className="space-y-6 mt-10">
+    <div className="space-y-6 mt-20">
       {cart.length ? (
         cart.map((item, index) => (
           <div

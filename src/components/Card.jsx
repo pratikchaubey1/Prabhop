@@ -31,7 +31,7 @@ function Card({ data, handleclick }) {
                   <p className="text-gray-500 text-sm line-clamp-3">{item.description}</p>
                   <div className="text-indigo-600 font-extrabold text-xl mt-2">${item.price}</div>
                   <button
-                    onClick={() => handleclick(item)}
+                    onClick={() => handleclick(index)}
                     className="mt-4 w-full py-2 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-xl shadow transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-400"
                   >
                     Add To Cart

@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './Root';
 import Home from './page/Home';
-import About from './page/About';
+
 import Contact from './page/Contact';
 import Login from './page/Login';
 import Cart from './page/Cart';
 import Signup from './page/Signup';
+import About from './page/About';
 
 function App() {
   const [data, setData] = useState([]);
@@ -46,6 +47,8 @@ function App() {
   const handleclick = (item) => {
     setcart((prev) => [...prev, item]);
   };
+  console.log(cart);
+  
 
   
 
@@ -55,7 +58,7 @@ function App() {
       element: <Root search={search} setsearch={setsearch} />,
       children: [
         {
-          path: "",
+          path: "/",
           element: <Home data={filteredData} setcart={setcart} handleclick={handleclick} />,
         },
         {
